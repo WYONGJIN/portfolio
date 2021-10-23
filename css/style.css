@@ -50,8 +50,14 @@ html {
 }
 /* s0 앞표지 */
 .s0 { 
-    background: url(../img/bg3.jpg) no-repeat center center;
+    background: url(../img/bg5.jpg) no-repeat center center;
     background-size: cover;
+}
+.s0>.section_home>img {
+    flex: 1;
+    align-content: center;
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
 }
 .s0>.section_home>h1 {
     color: #fff; font-size: 130px;
@@ -60,7 +66,7 @@ html {
 }
 /* s1 프로파일 */
 .s1 {
-    background-color: lightgreen;
+    background-color: rgb(12, 35, 66);
 }
 .pr_container {
     display: flex; width: 80%; margin: auto;
@@ -70,10 +76,11 @@ html {
 .pr_profile {
     flex: 1;
     padding-left: 60px;
+    color: white;
 }
 .pr_profile>ul {
     margin-top: 20px;
-    border-left: 7px solid pink;
+    border-left: 7px solid rgb(150, 79, 9);
 }
 .pr_profile>ul>li {
     padding-left: 30px; line-height: 30px;
@@ -89,34 +96,39 @@ html {
     justify-content: space-between;
 }
 .pr_title {
-    border-left: 3px solid pink;
+    border-left: 3px solid rgb(150, 79, 9);
     padding-left: 10px;
+    color: white;
 }
 .pr_date {
     float: left;
     padding-top: 20px; padding-left: 10px;
+    color: white;
+}
+.pr_date>div {
+    font-weight: bold;
 }
 .pr_txt {
     line-height: 1.5;
     float: left;
     padding-top: 20px; padding-left: 10px;
-}
-.pr_txt>div {
-    font-weight: bold;
+    color: white;
 }
 /* contact */
 .ct_inbox {
-    padding: 20px; background: #eee;
-    border: 5px double #ccc;
+    padding: 20px; background: rgb(12, 35, 66);
+    border: 9px double rgb(255, 255, 255);
     margin-top: 100px;
 }
 .ct_title {
     text-align: center;
+    color: white;
 }
 .ct_txt {
     display: flex;
     width: 90%; margin: auto;
     margin-top: 20px;
+    color: white;
 }
 .ct_txt>ul {
     flex: 1;
@@ -128,7 +140,7 @@ html {
 }
 /* S2 포트폴리오 영역 */
 .s2 {
-  background-color: lightyellow; 
+  background-color: rgb(12, 35, 66); 
   width: 100%;
   overflow: hidden; 
   position: relative;
@@ -158,12 +170,13 @@ html {
 .slide .pf_txt_container {
     position: relative;
     top: 18vh;
+    color: white;
 }
 .slide .pf_txt_container .pf_title {
     width: 50%; height: 50px;
     margin: auto;
     border-radius: 10px;
-    background: #eee;
+    background: rgb(38, 110, 168);
     line-height: 50px; text-align: center;
 }
 .slide .pf_txt_container table {
@@ -193,15 +206,16 @@ html {
     vertical-align: top;
     width: 30%; padding: 10px 0;
     font-size: 18px;
-    border: 1px solid #aaa;
+    border: 1px solid white;
     transition: 0.5s;
+    color: white;
 }
 .pf_gosite a:hover {
-    color: #fff; border: 1px solid pink;
+    color: black; border: 1px solid white;
 }
 .pf_gosite a::before {
     content: ""; z-index: -1;
-    position: absolute; background: pink;
+    position: absolute; background: white;
     transition: 1s;
     left: 50%; top: 0;
     transform: translateX(-50%);
